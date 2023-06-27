@@ -1,17 +1,14 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "types": [
-      "node"
-    ],
+    "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": false,
+    "allowJs": true,
     "skipLibCheck": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -19,16 +16,13 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
+    "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "."
+    "jsxImportSource": "@emotion/react",
+    "types": ["@emotion/react"]
   },
   "include": [
-    "src",
-    "**/src",
-    "./**/webpack.*.ts",
-    "app/scripts"
+    "src"
   ]
 }
